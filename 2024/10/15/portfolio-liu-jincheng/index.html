@@ -232,7 +232,13 @@
   <!-- 个人信息 -->
   <div class="flex flex-col md:flex-row items-start md:items-center mb-10 gap-6">
     <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-primary shadow-lg">
-      <img src="/images/me.jpg" alt="刘晋成" class="w-full h-full object-cover" loading="lazy">
+      
+        <picture>
+          <source srcset="/images/me.webp" type="image/webp">
+          <source srcset="/images/me.jpg" type="image/jpg">
+          <img src="/images/me.jpg" alt="刘晋成" class="w-full h-full object-cover" loading="lazy">
+        </picture>
+      
     </div>
     <div>
       <h1 class="text-3xl md:text-4xl font-bold mb-2">刘晋成</h1>
