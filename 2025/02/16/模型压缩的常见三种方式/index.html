@@ -140,24 +140,14 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/pic09.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Hello World</h2></a>
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/pic02.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>模型压缩的常见三种方式</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="量化（最常用）"><a href="#量化（最常用）" class="headerlink" title="量化（最常用）"></a>量化（最常用）</h1><p>将参数的精度降低，这样模型所占空间变小，加速模型推理</p>
+<h1 id="蒸馏"><a href="#蒸馏" class="headerlink" title="蒸馏"></a>蒸馏</h1><p>本质在于模仿<br>教师模型和学生模型，将输入给到教师模型，将输入同时给到学生模型。学生模型的输出和教师模型的输出越相近越好了，即用教师模型的输入和输出去训练学生模型</p>
+<h1 id="剪枝（效果不太好）"><a href="#剪枝（效果不太好）" class="headerlink" title="剪枝（效果不太好）"></a>剪枝（效果不太好）</h1><p>将复杂过程的信息“剪去”无关紧要的信息，只保留主干。必要时见主干还原<br>整个过程很复杂，就像你朋友说：“因为####，我需要###做，我想###效果，你帮我带一包卫生纸，记得要###的，还有###的。” 整个完整过程其实有很多信息。 剪枝，会把那么多信息，只保留有用的。“带纸，朋友，##用” 然后，需要的时候，再利用“带纸，朋友，##用”这三个词进行场景复原。（压缩后二次扩写，尝试回复正常信息） 优秀的人记事情，只记关键词。是一个道理。我和谁，大概什么时候。（就已经可以合理推理出自己的前因后果了）</p>
 
             </div>
 
@@ -220,8 +210,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'https://liu-jincheng.github.io/2023/09/06/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://liu-jincheng.github.io/2023/09/06/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://liu-jincheng.github.io/2025/02/16/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9%E7%9A%84%E5%B8%B8%E8%A7%81%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://liu-jincheng.github.io/2025/02/16/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9%E7%9A%84%E5%B8%B8%E8%A7%81%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
