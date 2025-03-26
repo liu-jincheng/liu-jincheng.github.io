@@ -1,17 +1,20 @@
-<!DOCTYPE html><html><head>
-	<link rel="bookmark" type="image/x-icon" href="/img/finder@4x.png">
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/finder@4x.png"/>
 	<link rel="shortcut icon" href="/img/finder@4x.png">
 	
 			    <title>
     Hexo
     </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kim Leo" />
     
-    
-    <meta name="keywords" content="Kim Leo">
-    
-    	<script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	 
     <noscript>
         <link rel="stylesheet" href="/css/noscript.css" />
@@ -31,21 +34,43 @@
 
 			    
   
-    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
 
-    
-    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
-    
-    
-    
-    
-    
-    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
 	
-<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/item.css"><style>
+<meta name="generator" content="Hexo 6.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+    <!-- Categories Page -->
+    <link rel="stylesheet" href="/css/item.css" />
+<style >
     .row a{
         border-bottom: none;
     }
@@ -72,27 +97,7 @@
     .category-list-count:after {
         content: ')';
     }
-</style><meta http-equiv="Cache-Control" content="max-age=31536000"><link rel="stylesheet" href="/css/style.min.css">
-        <script>
-          function loadMathJax() {
-            var script = document.createElement('script');
-            script.src = '//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML';
-            document.head.appendChild(script);
-          }
-          
-          // 只在需要时加载
-          if (document.querySelector('.math')) {
-            loadMathJax();
-          }
-        </script>
-      </head>
-    
-		
-<!-- Layouts -->
-
-    <!-- Categories Page -->
-    
-
+</style>
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
     <div id="wrapper" class="fade-in">
@@ -103,10 +108,10 @@
     <a href="/" class="logo">Kim Leo</a>
 </header>
         <!-- Nav 导航条 start -->
-        <nav id="nav" class="special">
-            <ul class="menu links">
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
 			<!-- Homepage  主页  --> 
-			<li>
+			<li >
 	            <a href="/" rel="nofollow">主页</a>
 	        </li>
 			<!-- categories_name  分类   --> 
@@ -116,7 +121,7 @@
 	                    <ul class="submenu">
 	                        <li>
 	                        <a class="category-link" href="/categories/AI/">AI</a>
-	                    </li></ul>
+	                    </ul>
 	        </li>
 	        
 	        <!-- archives  归档   --> 
@@ -167,17 +172,11 @@
             <article id="me" class="panel">
                 <header style="color: #000000">
                     <h1>Kim Leo</h1>
-                    <p>Sophomore @ SYSU School of Business  <br>  Love reading, travelling, coding, swimming, music.</p>
+                    <p>Sophomore @ SYSU School of Business  <br/>  Love reading, travelling, coding, swimming, music.</p>
                 </header>
                 <a href="" class="jumplink pic">
                     <span class="arrow icon fa-chevron-right"><span></span></span>
-                    
-        <picture>
-          <source srcset="/images/me.webp" type="image/webp">
-          <source srcset="/images/me.jpg" type="image/jpg">
-          <img src="/images/me.jpg" alt="" loading="lazy">
-        </picture>
-      
+                    <img src="/images/me.jpg" alt="" />
                 </a>
             </article>
             <!-- Main first e-->
@@ -203,7 +202,7 @@
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
-                <li>©Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
                 <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
             </ul>
             
@@ -211,9 +210,8 @@
 			
         </div>
     </div>
-
+</body>
 
 
  	
-
-<script src="/js/bundle.min.js" defer=""></script></body></html>
+</html>

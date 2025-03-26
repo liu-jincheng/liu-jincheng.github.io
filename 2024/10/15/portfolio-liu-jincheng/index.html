@@ -1,17 +1,20 @@
-<!DOCTYPE html><html><head>
-	<link rel="bookmark" type="image/x-icon" href="/img/finder@4x.png">
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/finder@4x.png"/>
 	<link rel="shortcut icon" href="/img/finder@4x.png">
 	
 			    <title>
     Hexo
     </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kim Leo" />
     
-    
-    <meta name="keywords" content="Kim Leo">
-    
-    	<script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	 
     <noscript>
         <link rel="stylesheet" href="/css/noscript.css" />
@@ -31,34 +34,36 @@
 
 			    
   
-    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
 
-    
-    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
-    
-    
-    
-    
-    
-    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
 	
-<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism_coy.css"><link rel="stylesheet" href="/css/typo.css"><meta http-equiv="Cache-Control" content="max-age=31536000"><link rel="stylesheet" href="/css/style.min.css">
-        <script>
-          function loadMathJax() {
-            var script = document.createElement('script');
-            script.src = '//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML';
-            document.head.appendChild(script);
-          }
-          
-          // 只在需要时加载
-          if (document.querySelector('.math')) {
-            loadMathJax();
-          }
-        </script>
-      </head>
+<meta name="generator" content="Hexo 6.3.0"></head>
     
 		
 <!-- Layouts -->
@@ -66,8 +71,8 @@
 
 
 <!--  代码渲染  -->
-
-
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
 <!-- 文章页 -->
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
@@ -79,10 +84,10 @@
     <a href="/" class="logo">Kim Leo</a>
 </header>
         <!-- Nav 导航条 start -->
-        <nav id="nav" class="special">
-            <ul class="menu links">
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
 			<!-- Homepage  主页  --> 
-			<li>
+			<li >
 	            <a href="/" rel="nofollow">主页</a>
 	        </li>
 			<!-- categories_name  分类   --> 
@@ -92,7 +97,7 @@
 	                    <ul class="submenu">
 	                        <li>
 	                        <a class="category-link" href="/categories/AI/">AI</a>
-	                    </li></ul>
+	                    </ul>
 	        </li>
 	        
 	        <!-- archives  归档   --> 
@@ -139,9 +144,9 @@
 			</ul>
 </nav>
 
-        <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/pic01.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>刘晋成个人作品集</h2></a>
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/images/pic01.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >刘晋成个人作品集</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
@@ -239,7 +244,7 @@ const lazyLoadImages = () =&gt; &#123;
 
 lazyLoadImages();
 </code></pre>
-<p>  });<br></script><p></p>
+<p>  });<br></script></p>
 <style>
   /* 自定义样式 - Linear App风格 */
   :root {
@@ -454,14 +459,8 @@ lazyLoadImages();
 
   <!-- 个人信息 -->
   <div class="flex flex-col md:flex-row items-start md:items-center mb-10 gap-6 animate-fade-in animate-delay-1">
-    <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary shadow-lg transition-all duration-300 hover:scale-105 hover:border-4 hover:shadow-xl">
-      
-        <picture>
-          <source srcset="/images/me.webp" type="image/webp">
-          <source srcset="/images/me.jpg" type="image/jpg">
-          <img data-src="/images/me.jpg" src="/images/me.jpg" alt="刘晋成" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy">
-        </picture>
-      
+    <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary shadow-lg transition-all duration-300 hover:scale-105 hover:border-4 hover:shadow-xl">
+      <img data-src="/images/me.jpg" src="/images/me.jpg" alt="刘晋成" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
     </div>
     <div>
       <h1 class="text-3xl md:text-4xl font-bold mb-2 relative inline-block">
@@ -514,23 +513,23 @@ lazyLoadImages();
         <p class="mb-0">领导力与创新: 高中担任三年班长并领导多个项目。作为中山大学HCP实验室的活跃成员，专注于技术创新。</p>
       </div>
       
-<pre><code>  &lt;div class="border-t border-gray-100 my-6 pt-6"&gt;&lt;/div&gt;
+<pre><code>  &lt;div class=&quot;border-t border-gray-100 my-6 pt-6&quot;&gt;&lt;/div&gt;
   
-  &lt;div class="flex flex-col md:flex-row justify-between mb-4"&gt;
+  &lt;div class=&quot;flex flex-col md:flex-row justify-between mb-4&quot;&gt;
     &lt;div&gt;
-      &lt;h3 class="text-xl font-semibold group-hover:text-primary transition-colors duration-300"&gt;深圳市翠园中学2023届1班&lt;/h3&gt;
-      &lt;div class="inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2"&gt;班长&lt;/div&gt;
+      &lt;h3 class=&quot;text-xl font-semibold group-hover:text-primary transition-colors duration-300&quot;&gt;深圳市翠园中学2023届1班&lt;/h3&gt;
+      &lt;div class=&quot;inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2&quot;&gt;班长&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="text-gray-500 mt-2 md:mt-0 md:text-right"&gt;
+    &lt;div class=&quot;text-gray-500 mt-2 md:mt-0 md:text-right&quot;&gt;
       &lt;p&gt;2020年9月–2023年6月&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="p-4 bg-gray-50 rounded-lg mt-4 border-l-4 border-primary"&gt;
-    &lt;p class="mb-0"&gt;勤勤恳恳，认真负责，乐于助人，受到老师和同学们的高度称赞。&lt;/p&gt;
+  &lt;div class=&quot;p-4 bg-gray-50 rounded-lg mt-4 border-l-4 border-primary&quot;&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;勤勤恳恳，认真负责，乐于助人，受到老师和同学们的高度称赞。&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-  </div></section>
+  </section>
 
   <!-- 技能 -->
   <section class="mb-12">
@@ -544,26 +543,26 @@ lazyLoadImages();
           <h3 class="text-xl font-semibold group-hover:text-primary transition-colors duration-300">技术技能</h3>
         </div>
         
-<pre><code>    &lt;div class="mb-5 pl-4 border-l-2 border-primary-light"&gt;
-      &lt;h4 class="font-medium text-base mb-2"&gt;编程与设计&lt;/h4&gt;
-      &lt;div class="flex flex-wrap gap-2 mb-3"&gt;
-        &lt;span class="badge"&gt;C&lt;/span&gt;
-        &lt;span class="badge"&gt;C++&lt;/span&gt;
-        &lt;span class="badge"&gt;Python&lt;/span&gt;
-        &lt;span class="badge"&gt;HTML&lt;/span&gt;
-        &lt;span class="badge"&gt;3D设计&lt;/span&gt;
-        &lt;span class="badge"&gt;创客工具&lt;/span&gt;
+<pre><code>    &lt;div class=&quot;mb-5 pl-4 border-l-2 border-primary-light&quot;&gt;
+      &lt;h4 class=&quot;font-medium text-base mb-2&quot;&gt;编程与设计&lt;/h4&gt;
+      &lt;div class=&quot;flex flex-wrap gap-2 mb-3&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;C&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;C++&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;Python&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;HTML&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;3D设计&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;创客工具&lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     
-    &lt;div class="pl-4 border-l-2 border-primary-light"&gt;
-      &lt;h4 class="font-medium text-base mb-2"&gt;办公与设计软件&lt;/h4&gt;
-      &lt;div class="flex flex-wrap gap-2 mb-3"&gt;
-        &lt;span class="badge"&gt;Word&lt;/span&gt;
-        &lt;span class="badge"&gt;PPT&lt;/span&gt;
-        &lt;span class="badge"&gt;Excel&lt;/span&gt;
-        &lt;span class="badge"&gt;VBA&lt;/span&gt;
-        &lt;span class="badge"&gt;Photoshop&lt;/span&gt;
+    &lt;div class=&quot;pl-4 border-l-2 border-primary-light&quot;&gt;
+      &lt;h4 class=&quot;font-medium text-base mb-2&quot;&gt;办公与设计软件&lt;/h4&gt;
+      &lt;div class=&quot;flex flex-wrap gap-2 mb-3&quot;&gt;
+        &lt;span class=&quot;badge&quot;&gt;Word&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;PPT&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;Excel&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;VBA&lt;/span&gt;
+        &lt;span class=&quot;badge&quot;&gt;Photoshop&lt;/span&gt;
       &lt;/div&gt;
 </code></pre>
   <!-- 项目经历 -->
@@ -603,75 +602,75 @@ lazyLoadImages();
       </div>
       
 <pre><code>  &lt;!-- 项目2 --&gt;
-  &lt;div class="card p-6 rounded-lg mb-6 group hover:border-primary-light"&gt;
-    &lt;div class="flex items-start gap-4 mb-4"&gt;
-      &lt;div class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300"&gt;
-        &lt;i class="fas fa-brain"&gt;&lt;/i&gt;
+  &lt;div class=&quot;card p-6 rounded-lg mb-6 group hover:border-primary-light&quot;&gt;
+    &lt;div class=&quot;flex items-start gap-4 mb-4&quot;&gt;
+      &lt;div class=&quot;w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300&quot;&gt;
+        &lt;i class=&quot;fas fa-brain&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
-      &lt;div class="flex-grow"&gt;
-        &lt;div class="flex flex-col md:flex-row justify-between mb-2"&gt;
-          &lt;h3 class="text-xl font-semibold group-hover:text-primary transition-colors duration-300"&gt;"绿慧智体"基于AIGC的一站式ESG报告智能系统&lt;/h3&gt;
-          &lt;div class="inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0"&gt;项目负责人&lt;/div&gt;
+      &lt;div class=&quot;flex-grow&quot;&gt;
+        &lt;div class=&quot;flex flex-col md:flex-row justify-between mb-2&quot;&gt;
+          &lt;h3 class=&quot;text-xl font-semibold group-hover:text-primary transition-colors duration-300&quot;&gt;&quot;绿慧智体&quot;基于AIGC的一站式ESG报告智能系统&lt;/h3&gt;
+          &lt;div class=&quot;inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0&quot;&gt;项目负责人&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="mb-4 flex flex-wrap gap-2"&gt;
-          &lt;span class="badge"&gt;2024至今&lt;/span&gt;
-          &lt;span class="badge"&gt;AIGC&lt;/span&gt;
-          &lt;span class="badge"&gt;ESG&lt;/span&gt;
+        &lt;div class=&quot;mb-4 flex flex-wrap gap-2&quot;&gt;
+          &lt;span class=&quot;badge&quot;&gt;2024至今&lt;/span&gt;
+          &lt;span class=&quot;badge&quot;&gt;AIGC&lt;/span&gt;
+          &lt;span class=&quot;badge&quot;&gt;ESG&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class="p-4 bg-gray-50 rounded-lg border-l-4 border-primary"&gt;
-          &lt;p class="mb-0"&gt;该智能系统基于自研的智体超脑模型，集ESG（环境、社会和公司治理）报告生成与解读于一体，旨在为企业、投资者及相关利益方提供高效、精准的ESG报告服务。通过这一整合平台，用户能够轻松获取高质量的ESG报告，并对其进行深度分析，从而助力更明智的决策。&lt;/p&gt;
+        &lt;div class=&quot;p-4 bg-gray-50 rounded-lg border-l-4 border-primary&quot;&gt;
+          &lt;p class=&quot;mb-0&quot;&gt;该智能系统基于自研的智体超脑模型，集ESG（环境、社会和公司治理）报告生成与解读于一体，旨在为企业、投资者及相关利益方提供高效、精准的ESG报告服务。通过这一整合平台，用户能够轻松获取高质量的ESG报告，并对其进行深度分析，从而助力更明智的决策。&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   
   &lt;!-- 项目3 --&gt;
-  &lt;div class="card p-6 rounded-lg mb-6 group hover:border-primary-light"&gt;
-    &lt;div class="flex items-start gap-4 mb-4"&gt;
-      &lt;div class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300"&gt;
-        &lt;i class="fas fa-satellite"&gt;&lt;/i&gt;
+  &lt;div class=&quot;card p-6 rounded-lg mb-6 group hover:border-primary-light&quot;&gt;
+    &lt;div class=&quot;flex items-start gap-4 mb-4&quot;&gt;
+      &lt;div class=&quot;w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300&quot;&gt;
+        &lt;i class=&quot;fas fa-satellite&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
-      &lt;div class="flex-grow"&gt;
-        &lt;div class="flex flex-col md:flex-row justify-between mb-2"&gt;
-          &lt;h3 class="text-xl font-semibold group-hover:text-primary transition-colors duration-300"&gt;地球星链散点式分布供电系统&lt;/h3&gt;
-          &lt;div class="inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0"&gt;第一作者&lt;/div&gt;
+      &lt;div class=&quot;flex-grow&quot;&gt;
+        &lt;div class=&quot;flex flex-col md:flex-row justify-between mb-2&quot;&gt;
+          &lt;h3 class=&quot;text-xl font-semibold group-hover:text-primary transition-colors duration-300&quot;&gt;地球星链散点式分布供电系统&lt;/h3&gt;
+          &lt;div class=&quot;inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0&quot;&gt;第一作者&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="mb-4 flex flex-wrap gap-2"&gt;
-          &lt;span class="badge"&gt;2022&lt;/span&gt;
-          &lt;span class="badge"&gt;能源创新&lt;/span&gt;
+        &lt;div class=&quot;mb-4 flex flex-wrap gap-2&quot;&gt;
+          &lt;span class=&quot;badge&quot;&gt;2022&lt;/span&gt;
+          &lt;span class=&quot;badge&quot;&gt;能源创新&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class="p-4 bg-gray-50 rounded-lg border-l-4 border-primary"&gt;
-          &lt;p class="mb-0"&gt;本课题基于远距离无线输电的原理，设计了一款地球发电卫星系统。讨论了远距离无线输电在未来能源紧缺时的应用，针对已有技术的现状及其特点，提出了卫星组网星链散点式分布和远距离无线输电系统的融合。&lt;/p&gt;
+        &lt;div class=&quot;p-4 bg-gray-50 rounded-lg border-l-4 border-primary&quot;&gt;
+          &lt;p class=&quot;mb-0&quot;&gt;本课题基于远距离无线输电的原理，设计了一款地球发电卫星系统。讨论了远距离无线输电在未来能源紧缺时的应用，针对已有技术的现状及其特点，提出了卫星组网星链散点式分布和远距离无线输电系统的融合。&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   
   &lt;!-- 工作经历 --&gt;
-  &lt;div class="card p-6 rounded-lg mb-6 group hover:border-primary-light"&gt;
-    &lt;div class="flex items-start gap-4 mb-4"&gt;
-      &lt;div class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300"&gt;
-        &lt;i class="fas fa-briefcase"&gt;&lt;/i&gt;
+  &lt;div class=&quot;card p-6 rounded-lg mb-6 group hover:border-primary-light&quot;&gt;
+    &lt;div class=&quot;flex items-start gap-4 mb-4&quot;&gt;
+      &lt;div class=&quot;w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-primary group-hover:text-white transition-all duration-300&quot;&gt;
+        &lt;i class=&quot;fas fa-briefcase&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
-      &lt;div class="flex-grow"&gt;
-        &lt;div class="flex flex-col md:flex-row justify-between mb-2"&gt;
-          &lt;h3 class="text-xl font-semibold group-hover:text-primary transition-colors duration-300"&gt;中山大学岭南学院伍舜德图书馆一楼学生助理&lt;/h3&gt;
-          &lt;div class="inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0"&gt;负责人&lt;/div&gt;
+      &lt;div class=&quot;flex-grow&quot;&gt;
+        &lt;div class=&quot;flex flex-col md:flex-row justify-between mb-2&quot;&gt;
+          &lt;h3 class=&quot;text-xl font-semibold group-hover:text-primary transition-colors duration-300&quot;&gt;中山大学岭南学院伍舜德图书馆一楼学生助理&lt;/h3&gt;
+          &lt;div class=&quot;inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium mt-2 md:mt-0&quot;&gt;负责人&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="mb-4 flex flex-wrap gap-2"&gt;
-          &lt;span class="badge"&gt;2023-2024&lt;/span&gt;
-          &lt;span class="badge"&gt;管理&lt;/span&gt;
-          &lt;span class="badge"&gt;服务&lt;/span&gt;
+        &lt;div class=&quot;mb-4 flex flex-wrap gap-2&quot;&gt;
+          &lt;span class=&quot;badge&quot;&gt;2023-2024&lt;/span&gt;
+          &lt;span class=&quot;badge&quot;&gt;管理&lt;/span&gt;
+          &lt;span class=&quot;badge&quot;&gt;服务&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class="p-4 bg-gray-50 rounded-lg border-l-4 border-primary"&gt;
-          &lt;p class="mb-0"&gt;及时反馈信息，团结好学生助理，共同为图书馆营造更好的环境出一份力。运用自己所学的VBA知识为老师设计了宏（Excel里可运行的程序），方便计算学生助理换班后的总值班时长。&lt;/p&gt;
+        &lt;div class=&quot;p-4 bg-gray-50 rounded-lg border-l-4 border-primary&quot;&gt;
+          &lt;p class=&quot;mb-0&quot;&gt;及时反馈信息，团结好学生助理，共同为图书馆营造更好的环境出一份力。运用自己所学的VBA知识为老师设计了宏（Excel里可运行的程序），方便计算学生助理换班后的总值班时长。&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-  </div></section>
+  </section>
 
   <!-- 奖项与荣誉 -->
   <section class="mb-12">
@@ -784,7 +783,7 @@ lazyLoadImages();
       <p class="text-gray-500">© 2025 刘晋成. 保留所有权利。</p>
     </div>
   </footer>
-</ul></div>
+</div>
             </div>
 
             <!-- Post Comments -->
@@ -872,11 +871,11 @@ $('.btn_click_load').click(function() {
 </style>
 
 
-        </section></div>
+        </div>
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
-                <li>©Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
                 <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
             </ul>
             
@@ -884,10 +883,9 @@ $('.btn_click_load').click(function() {
 			
         </div>
     </div>
-
+</body>
 
 
 
  	
-
-</section></div></div></div></div><script src="/js/bundle.min.js" defer=""></script></body></html>
+</html>
